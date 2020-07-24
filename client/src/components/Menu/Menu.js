@@ -1,20 +1,24 @@
-import React, { useState, useEffect } from "react";
-import API from "./../../utils/API";
+// import React, { useEffect, useState } from "react";
+// import API from "../../utils/API";
+// import Container from "../Wrapper";
 
-function Menu() {
+// function Menu() {
+//     const [food, setFood] = useState([]);
 
-    //const [menuItems, setmenuItems] = useState([])
+//     useEffect(() => {
+//         const fetchData = async () => {
+//             const result = await API.getMenu();
+//             setFood(result.data.Menu);
+//         };
 
-    useEffect(() => {
-        API.getMenu().then((res) => {
-            console.log(res.data);
-            //setmenuItems(res.data.Menu);
-            console.log("testing testing")
-        });
-    }, []);
+//         fetchData();
+//     }, []);
 
-    return <div></div>;
+//     return (
+//         <Container>
+//             <h6>Menu Component</h6>
+//         </Container>
+//     )
+// }
 
-}
-
-export default Menu;
+// export default Menu;

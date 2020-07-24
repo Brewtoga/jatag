@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import API from "../utils/API";
 import Logo from "../components/Logo";
 import MenuItem from "../components/MenuItem";
-// import IntroHeader from "../components/IntroHeader";
+import "../index.css";
 
 function Menu() {
   const [food, setFood] = useState([]);
@@ -18,9 +18,8 @@ function Menu() {
 
   return (
     <>
+      <Logo />
       <div className="container-menu">
-        <Logo />
-
         {food &&
           food.length > 0 &&
           identifyMenuGroups(food).map((menuGroup) => (
@@ -31,7 +30,11 @@ function Menu() {
                 {food
                   .filter((menuItem) => menuItem.type === menuGroup)
                   .map((menuItem) => (
-                    <MenuItem props={menuItem} key={menuItem.menuItemName} />
+                    <MenuItem
+                      className="menu-item"
+                      props={menuItem}
+                      key={menuItem.menuItemName}
+                    />
                   ))}
               </div>
             </>

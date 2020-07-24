@@ -1,0 +1,17 @@
+.container-location {
+  margin-top: 80px;
+}
+
+.map {
+  background-color: initial;
+  /* z-index: 10; */
+}
+
+.loca tion {
+  display: flex;
+  margin-top: 50px;
+}
+
+.row {
+  align-items: flex-start;
+}
