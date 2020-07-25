@@ -1,7 +1,9 @@
 @media (min-width: 768px) {
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    /* width: 990px; */
   }
 
   .main-container {
@@ -28,6 +30,7 @@ body {
 
 .btn-rad {
   border-radius: 0.25rem;
+  background-color: rgb(225, 70, 45);
 }
 
 button {
@@ -54,12 +57,14 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   margin-top: 80px;
+  /* background-color: darkorange; */
 }
 
 .menu-group {
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
+  /* background-color: darkorchid; */
 }
 
 .menu-field {
@@ -68,11 +73,13 @@ button:focus {
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 20px;
+  /* background-color: darkolivegreen; */
 }
 
 .menu-item {
   display: flex;
   justify-content: center;
+  /* background-color: forestgreen; */
 }
 /* Reservation Page */
 
@@ -98,3 +105,14 @@ button:focus {
 }
 
 /* Sign Up Page */
+/* Admin Page */
+.admin-header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Order Page */
+.btn-add {
+  border-radius: 0.25rem;
+  background-color: rgb(225, 70, 45);
+}
