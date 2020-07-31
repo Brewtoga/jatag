@@ -35,3 +35,8 @@
   display: inline;
   /* background-color: olive; */
 }
+
+.card {
+  display: flex;
+  /* background-color: orange; */
+}

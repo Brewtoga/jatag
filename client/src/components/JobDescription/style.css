@@ -1,0 +1,16 @@
+.description-unit {
+  display: flex;
+  flex-direction: row;
+  /* width: 900px; */
+  justify-content: space-around;
+  margin-bottom: 40px;
+  /* background-color: steelblue; */
+}
+.job-title {
+  width: 300px;
+  /* background-color: salmon; */
+}
+.job-description {
+  width: 300px;
+  /* background-color: rebeccapurple; */
+}

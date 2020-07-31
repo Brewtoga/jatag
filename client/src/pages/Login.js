@@ -10,7 +10,7 @@ const loginStyle = {
   flexDirection: "column",
   width: "400px",
   margin: "0 auto",
-  marginTop: "80px",
+
   // backgroundColor: "blue",
 };
 
@@ -70,17 +70,20 @@ function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button className="btn-rad">Log In</button>
+            <div className="signup-btn">
+              <button className="btn-rad">Log In</button>
+            </div>
             <br></br>
             <br></br>
             <h4>Sign Up</h4>
             <p className="contact">
               If you have not signed up with us yet, please do now!
             </p>
-
-            <button className="btn-rad" onClick={routeChange}>
-              Sign up
-            </button>
+            <div className="signup-btn">
+              <button className="btn-rad" onClick={routeChange}>
+                Sign Up
+              </button>
+            </div>
           </Form>
         </div>
       </div>

@@ -14,8 +14,7 @@ export default {
   // },
   getRole: (id) => {
     const user = axios.get(`/api/user/${id}`);
-    console.log(user);
-    return user.role;
+    return (user.role, user.username);
   },
 
   // sign up a user to our service
@@ -26,6 +25,22 @@ export default {
       password: password,
     });
   },
+
+  // add new menu item
+ /*  postMenuItem: (menuItemName, MenuType, isSpecial, 
+    ingredients, price, addIngredients, specialPrice,
+    removeIngredients,) => {
+      return axios.post("api/menu", {
+        menuItemName: menuItemName,
+        MenuType: MenuType,
+        isSpecial: isSpecial, 
+        ingredients: ingredients,
+        price: price,
+        addIngredients: addIngredients,
+        specialPrice: specialPrice,
+        removeIngredients: removeIngredients,
+      })
+    }, */
 
   // retrieve menu items
   getMenu: () => {
@@ -43,23 +58,12 @@ export default {
         return axios.post("/api/order", {
           price: data.price,
           menuItemName: data.menuItemName,
-          quantity:data.qty,
+          quantity: data.qty,
           tax: tax,
           grandTotal: total,
         });
       });
     }
   
-  },
-  // getMenu: (res) => {
-  //   return axios.get("api/menu", {});
-  // return axios.get("api/menu");
-  // },
-  // getMenu: (res) => {
-  //   return axios.get("api/menu", {});
-  // },
-
-  // postOrder: (title, body) => {
-  //   return axios.post("api/menu", { menuType: title, menuItemName: body });
-  // },
+  }
 };

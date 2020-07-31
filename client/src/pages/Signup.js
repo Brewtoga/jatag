@@ -11,7 +11,6 @@ const signupStyles = {
   flexDirection: "column",
   maxWidth: "400px",
   margin: "0 auto",
-  marginTop: "80px",
 };
 
 function Signup() {
@@ -89,9 +88,11 @@ function Signup() {
             type="password"
             onChange={handleChange}
           />
-          <button className="btn-rad" type="submit">
-            Submit
-          </button>
+          <div className="signup-btn">
+            <button className="btn-rad" type="submit">
+              Sign Up
+            </button>
+          </div>
         </Form>
       </div>
     </>

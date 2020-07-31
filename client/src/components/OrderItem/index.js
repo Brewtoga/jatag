@@ -7,18 +7,18 @@ const showButtons = (isEdit) => {
     return (
       <div className="button-bank">
         <div className="item-button">
-          <Button variant="primary">Edit</Button>
+          <Button variant="info">Edit</Button>
         </div>
         <div className="item-button">
-          <Button variant="primary">Delete</Button>
+          <Button variant="info">Delete</Button>
         </div>
       </div>
     );
   } else {
     return (
       <div>
-        {/* <Button variant="primary">Customize</Button> */}
-        {/* <Button variant="primary" onClick={Orderfunction.addItem(event,item)}>Add to Cart</Button> */}
+        {/* <Button variant="">Customize</Button> */}
+        {/* <Button variant="" onClick={Orderfunction.addItem(event,item)}>Add to Cart</Button> */}
       </div>
     );
   }

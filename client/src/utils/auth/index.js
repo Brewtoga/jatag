@@ -11,9 +11,7 @@ export const AuthProvider = ({ value, ...rest }) => {
   const [user, setUser] = useState(
     isLoggedIn ? authService.getProfile() : null
   );
-  const [role, setRole] = useState(
-    isLoggedIn ? authService.getRole() : null
-  );
+  const [role, setRole] = useState(isLoggedIn ? authService.getRole() : null);
 
   const login = (email, password) => {
     return authService
@@ -31,7 +29,7 @@ export const AuthProvider = ({ value, ...rest }) => {
         isLoggedIn,
         role,
         login,
-        logout
+        logout,
       }}
       {...rest}
     />

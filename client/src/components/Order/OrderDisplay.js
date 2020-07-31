@@ -21,7 +21,7 @@ displaymenus = (menus) => {
           </div>
           {/* <div className="menuItem"> key={index}</div> */}
           <Button
-            variant="primary"
+            variant="info"
             key={menulist._id}
             onClick={(event) => this.addItem(event, menulist)}
           >

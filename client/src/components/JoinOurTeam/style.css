@@ -1,13 +1,14 @@
 .container-team {
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
+  /* background-color: thistle; */
+  justify-content: center;
 }
 
-h3 {
-  text-align: center;
-}
-
-hr {
-  color: white;
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 900px;
+  /* background-color: springgreen; */
 }

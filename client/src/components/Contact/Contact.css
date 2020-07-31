@@ -6,6 +6,7 @@
   text-align: left;
 }
 
-.container-contact {
-  margin-top: 80px;
+.contact-button {
+  display: flex;
+  justify-content: flex-end;
 }
