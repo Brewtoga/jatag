@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import { useAuth } from "../utils/auth";
+import API from "../utils/API";
 
 function AdminRoute(props) {
   const { isLoggedIn, user, role } = useAuth();

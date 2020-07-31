@@ -3,7 +3,7 @@
         "orderId": 30240,
         "orderStatus": true,
         "orderItemsLength": 4,
-        "orderTotalCost": "$38.96",
+        "orderTotalCost": "$50.40",
         "orderItems": [
             {
                 "menuItemName": "Hobnob Cob (V, GF)",
@@ -33,7 +33,7 @@
         "orderId": 30241,
         "orderStatus": false,
         "orderItemsLength": 3,
-        "orderTotalCost": "$38.96",
+        "orderTotalCost": "$78.75",
         "orderItems": [
             {
                 "menuItemName" : "New York Strip for Two",
@@ -64,7 +64,7 @@
         "orderId": 30242,
         "orderStatus": true,
         "orderItemsLength": 2,
-        "orderTotalCost": "$38.96",
+        "orderTotalCost": "$65.10",
         "orderItems": [
             {
                 "menuItemName" : "Crab Cakes for Two",
@@ -86,7 +86,7 @@
         "orderId": 30243,
         "orderStatus": false,
         "orderItemsLength": 3,
-        "orderTotalCost": "$38.96",
+        "orderTotalCost": "$54.60",
         "orderItems": [
             {
                 "menuItemName" : "Strawberry Goat Cheese Salad (V, GF)",
@@ -115,7 +115,7 @@
         "orderId": 30244,
         "orderStatus": true,
         "orderItemsLength": 3,
-        "orderTotalCost": "$38.96",
+        "orderTotalCost": "$54.60",
         "orderItems": [
             {
                 "menuItemName" : "Strawberry Goat Cheese Salad (V, GF)",
@@ -144,7 +144,7 @@
         "orderId": 30245,
         "orderStatus": true,
         "orderItemsLength": 3,
-        "orderTotalCost": "$38.96",
+        "orderTotalCost": "$54.60",
         "orderItems": [
             {
                 "menuItemName": "Hobnob Cob (V, GF)",
@@ -172,7 +172,3 @@
 
     
 ]
-
-
-
-
