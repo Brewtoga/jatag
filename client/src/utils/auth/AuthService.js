@@ -1,5 +1,6 @@
 import decode from "jwt-decode";
 import axios from "axios";
+import API from "../API";
 
 export default class AuthService {
   constructor() {
