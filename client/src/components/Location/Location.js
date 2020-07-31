@@ -9,7 +9,7 @@ function Location() {
     <div>
       <Logo />
       <div className="container-location">
-        <p>
+        <p className="location-description">
           For the health and safety of our customers and staff, our patio and
           dining room are currently closed. However, we are offering a small but
           mighty menu available for curbside pick-up daily from 3:30-7:30pm so
@@ -23,25 +23,27 @@ function Location() {
         <div className="location">
           <div className="row">
             <div className="col m3">
-              <p>
+              <p className="location-description">
                 <strong>Location</strong>
               </p>
-              <p>6010 Hermitage Rd. Richmond, VA 23228</p>
+              <p className="location-description">
+                6010 Hermitage Rd. Richmond, VA 23228
+              </p>
             </div>
             <div className="col m3">
-              <p>
+              <p className="location-description">
                 <strong>Hours</strong>
               </p>
-              <p>
+              <p className="location-description">
                 Tue–Fri: 11am–11pm Saturday: 5pm-11pm Sunday: 9am-3pm Monday:
                 Closed
               </p>
             </div>
             <div className="col m3">
-              <p>
+              <p className="location-description">
                 <strong>Parking</strong>
               </p>
-              <p>
+              <p className="location-description">
                 Ample parking is available in our lot (including near the
                 dumpsters and on either side of the building) and along Kenwood
                 Avenue.

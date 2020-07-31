@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Line Cook",
+    "description": "We’re looking for an experienced line cook with an attention to detail, a positive attitude, and a drive to do better every single day. The ideal candidate will have a passion for seasonal food who can learn quickly; A reliable team-player is a must!"
+  },
+  {
+    "id": 2,
+    "title": "Server/Bartender",
+    "description": "All front of the house positions are currently filled."
+  },
+  {
+    "id": 3,
+    "title": "Host/Hostess",
+    "description": "All front of the house positions are currently filled."
+  }
+]

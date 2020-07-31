@@ -1,17 +1,9 @@
-h1 {
-  color: rgb(77, 255, 0);
-  font-family: "Source Sans Pro", Tahoma, Arial, sans-serif;
-  font-size: 150px;
+.contact-tag {
   text-align: center;
-  /* margin-top: 30px; */
 }
 
-p {
-  text-align: center;
-  color: white;
-}
-
-img {
-  width: 50px;
-  height: 50px;
-}
+/* body {
+    background-image: url("https://image.freepik.com/free-photo/green-cocktail-with-slice-lime-wasabi-black-background_78820-72.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+}  */

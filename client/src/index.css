@@ -30,13 +30,19 @@ body {
 
 .btn-rad {
   border-radius: 0.25rem;
-  background-color: rgb(225, 70, 45);
+  background-color: #17a2b8;
+}
+.btn-rad:hover,
+.btn-rad:active,
+.btn-rad:focus {
+  background-color: #17879b;
 }
 
 button {
   border: none;
   cursor: pointer;
   background-color: rgb(225, 70, 45);
+  background-color: danger;
   color: white;
   font-size: 1.125rem;
   padding: 0.75rem 1.5rem;
@@ -56,7 +62,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   /* background-color: darkorange; */
 }
 
@@ -105,6 +111,10 @@ button:focus {
 }
 
 /* Sign Up Page */
+.signup-btn {
+  display: flex;
+  justify-content: flex-end;
+}
 /* Admin Page */
 .admin-header {
   text-align: center;

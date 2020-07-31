@@ -52,7 +52,9 @@ function Contact() {
                 <Form.Control as="textarea" rows="3" />
               </Form.Group>
             </Form>
-            <button className="btn-rad">Submit</button>
+            <div className="contact-button">
+              <button className="btn-rad">Submit</button>
+            </div>
           </Col>
         </Row>
       </Container>
