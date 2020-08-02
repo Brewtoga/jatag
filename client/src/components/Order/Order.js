@@ -8,7 +8,6 @@ import "./Order.css";
 import Logo from "../Logo";
 import { Button, Card, variant, Alert } from "react-bootstrap";
 import ReactDOM from "react-dom";
-// import OrderItem from "../OrderItem/OrderItem";
 
 class orders extends React.Component {
   constructor(props) {
@@ -23,10 +22,11 @@ class orders extends React.Component {
       orderDetail: [],
       display: false,
       curTime: new Date().toLocaleString(),
+      exits: false,
     };
   }
 
-  //////////////////////////////////////////////////////////////
+  /////////////////////////////////  Starting /////////////////////////////
   componentDidMount = () => {
     this.getMenus();
   };
@@ -75,17 +75,6 @@ class orders extends React.Component {
             </div>
           </Card.Body>
         </Card>
-        // <div>
-        //   {/* <div className="card"> */}
-
-        //   <button
-        //     name="btn"
-        //     key={menulist._id}
-        //     onClick={(event) => this.addItem(event, menulist)}
-        //   >
-        //     add
-        //   </button>
-        // </div>
       );
     });
   };
@@ -112,10 +101,15 @@ class orders extends React.Component {
       this.setState({ cart: newcart });
       total = price + this.state.itemtotal;
       let t = this.state.tax * total;
-      this.state.taxes = t;
-      this.setState({ grandtotal: t + total });
+      this.state.taxes = Math.round(t * 100 + Number.EPSILON) / 100;
+      let grandtot = t + total;
+      grandtot.toFixed(2);
+      total.toFixed(2);
+      t = +t.toFixed(2);
+      console.log("t is", t);
+      this.setState({ grandtotal: grandtot });
       this.setState({ itemtotal: total });
-      this.setState({ taxes: t });
+      this.setState({ taxes: t.toFixed(2) });
       console.log(this.state.cart);
     }
   };
@@ -172,7 +166,7 @@ class orders extends React.Component {
     });
   };
   /////////////////////////////////////////// Dispaly price ///////////////////////////////////////
-  //  ///////////////////////////////////////////////////////////////////////////////////////////
+
   handleOrderDetails = () => {
     return (
       <>
@@ -199,8 +193,6 @@ class orders extends React.Component {
     return items.map((order, index) => {
       if (!items.length) return null;
       const menulist = { order }.order;
-      // const price= parseInt(menulist.price)
-
       const price = menulist.price;
       const menuItemName = menulist.menuItemName;
       const ingredients = menulist.ingredients;
@@ -347,10 +339,27 @@ class orders extends React.Component {
       });
     }
   };
-
+  ///////////////////////////////////     Print      ////////////////////////
+  print(e) {
+    e.preventDefault();
+    window.print();
+  }
   /////////////// render function    /////////////////////////////////////////////////
   render() {
     console.log("state:", this.state.cart);
+    //   if (this.state.exits !== false)
+    //   {
+
+    //    return(
+    //     <>
+    //       <Logo />
+    //         <div>
+    //         {this.exists()}
+    //         </div>
+    //     </>
+    //   )
+
+    // }
     if (this.state.cart.length === 0) {
       return (
         <>
@@ -365,9 +374,7 @@ class orders extends React.Component {
           </div>
         </>
       );
-    }
-
-    if (this.state.display !== true) {
+    } else if (this.state.display !== true) {
       return (
         <>
           <Logo />
@@ -386,7 +393,6 @@ class orders extends React.Component {
           <div className="result">
             {this.handleOrderDetails(this.state.cart)}
           </div>
-          {/* <OrderDetail cart={this.state.cart} /> */}
         </>
       );
     }
@@ -404,14 +410,10 @@ class orders extends React.Component {
 
             <br></br>
             <div className="btn-container">
-              <button
-                className="btn-rad"
-                onClick={"http://localhost:3000/frontpage"}
-              >
+              <button className="btn-remove" onClick={(e) => this.print(e)}>
                 Print
               </button>
-              <button className="btn-rad">Email</button>
-            </div>
+              </div>
           </div>
         </div>
       </>
